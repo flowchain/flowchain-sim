@@ -14,9 +14,7 @@ $ npm i
 
 # How to Use
 
-![](screenshot/app.png)
-
-Please open a terminal and start the debug server:
+1. Please open a terminal and start the debug server:
 
 ```
 $ export HOST=192.168.124.4
@@ -30,13 +28,13 @@ The environment variables:
 * `HOST`: the listening host
 * `PORT`: the listening port
 
-After starting the debug server, please modify `dist/index.html` by placing the debug server IP address and port number:
+2. After starting the debug server, please modify `dist/index.html` by placing the debug server IP address and port number:
 
 ```
 var client = new WebSocket( 'ws://192.168.124.4:9009/node/00000000/viewer' );
 ```
 
-Start a web server locally:
+3. Start a web server locally:
 
 ```
 $ http-server dist/ -p 3000
@@ -47,8 +45,11 @@ Available on:
 Hit CTRL-C to stop the server
 ```
 
-You can install `http-server` by executing `npm i http-server -g`. Open the debug application with your browser by the the url `http://127.0.0.1:3000`.
+You can install `http-server` by executing `npm i http-server -g`. 
 
+4. Open the debug application with your browser by the the url `http://127.0.0.1:3000`.
+
+![](screenshot/app.png)
 
 # License
 
