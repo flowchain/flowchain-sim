@@ -1,0 +1,34 @@
+{
+  "name": "flowchain-sim",
+  "version": "0.0.1",
+  "description": "A simple Flowchain debug tool",
+  "keywords": [
+    "iot"
+  ],
+  "author": "jollen <jollen@jollen.org> (http://jollen.org/)",
+  "main": "libs/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowchain/flowchain-sim.git"
+  },
+  "homepage": "https://github.com/flowchain/flowchain-sim.git",
+  "dependencies": {
+    "bl": "^0.9.4",
+    "bluebird": "^3.3.3",
+    "coap": "^0.10.3",
+    "util": "^0.10.3",
+    "utils-merge": "^1.0.0",
+    "websocket": "^1.0.17",
+    "wotcity.io": "*"
+  },
+  "scripts": {
+    "test": "make test",
+    "start": "node ./websocket-broker-server.js"
+  },
+  "devDependencies": {
+    "codecov": "^1.0.1",
+    "mocha": "^2.4.5",
+    "twilio": "^2.9.0"
+  },
+  "license": "MIT License"
+}
