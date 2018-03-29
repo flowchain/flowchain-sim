@@ -82,7 +82,7 @@ var drawD3Document = function(links) {
     }
 };
 
-var client = new WebSocket( 'ws://172.20.10.3:5000/node/00000000/viewer' );
+var client = new WebSocket( 'ws://192.168.124.4:9009/node/00000000/viewer' );
 var cache = [];
 
 client.onmessage = function(e) {
